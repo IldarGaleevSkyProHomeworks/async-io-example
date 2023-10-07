@@ -97,7 +97,7 @@ async def handler_test(request: Request) -> Response:
 # ======================= Socket.io ====================
 
 @socket_io_router.event
-async def async_io_connect(sid: str, environ) -> None:
+async def connect(sid: str, environ) -> None:
     log_socket_io_server.debug(f'connected: {sid}')
     log_socket_io_server.debug(f'connect env type: {type(environ)}')
     await socket_io_router.emit(
