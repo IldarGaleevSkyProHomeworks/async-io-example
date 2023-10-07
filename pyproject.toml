@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "telegramapertmentsolidbot"
+version = "0.1.0"
+description = ""
+authors = ["Ильдар Галеев <ildar-galeev92@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiogram = "^3.1.1"
+aiohttp = "^3.8.5"
+python-socketio = "^5.9.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
